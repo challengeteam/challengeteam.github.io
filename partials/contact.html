@@ -1,0 +1,90 @@
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-lg-12">
+            <h1 class="page-header">Liên Hệ
+                <small>Hãy liên hệ với chúng tôi</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="index.html">Trang chủ</a>
+                <li class="active">Liên Hệ</li>
+            </ol>
+        </div>
+
+        <div class="col-lg-12">
+
+            <iframe style="width:100%; height:400px;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6336176524137!2d106.68015121419316!3d10.762694262391458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f1c06f4e1dd%3A0x43900f1d4539a3d!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBLaG9hIGjhu41jIFThu7Egbmhpw6puIC0gxJBIIFF14buRYyBnaWEgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5o!5e0!3m2!1sen!2s!4v1460890722283"></iframe>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-8">
+            <h1>Hãy liên lạc với cho chúng tôi!</h1>
+
+            <form name="myForm" method="POST" novalidate>
+                <div class="row">
+                    <div class="form-group col-lg-4">
+                        <label for="input1">Họ và Tên</label>
+                        <input type="text" name="contact_name" class="form-control" id="input1" ng-model="contact_name" required>
+                        <span class="help-block" ng-show="myForm.contact_name.$dirty && myForm.contact_name.$invalid">
+                            <span class="help-block" ng-show="myForm.contact_name.$error.required">Bạn chưa nhập Họ và Tên</span>
+                        </span>
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <label for="input2">Địa chỉ email</label>
+                        <input type="email" name="contact_email" class="form-control" id="input2" ng-model="contact_email" required>
+                        <span class="help-block" ng-show="myForm.contact_email.$dirty && myForm.contact_email.$invalid">
+                            <span class="help-block" ng-show="myForm.contact_email.$error.required">Bạn chưa nhập Email</span>
+                            <span class="help-block" ng-show="myForm.contact_email.$error.email">Bạn đã nhập sai Email</span>
+                        </span>
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <label for="input3">Số điện thoại</label>
+                        <input type="number" class="form-control" id="input3" name="contact_phone" ng-model="contact_phone" required>
+                        <span class="help-block" ng-show="myForm.contact_phone.$dirty && myForm.contact_phone.$invalid">
+                            <span class="help-block" ng-show="myForm.contact_phone.$error.required">Bạn chưa nhập SĐT</span>
+                            <span class="help-block" ng-show="myForm.contact_phone.$error.number">Bạn đã nhập sai SĐT</span>
+                        </span>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="form-group col-lg-12">
+                        <label for="input4">Tin nhắn</label>
+                        <textarea name="contact_message" class="form-control" rows="6" id="input4" ng-model="contact_message" required></textarea>
+                        <span class="help-block" ng-show="myForm.contact_message.$dirty && myForm.contact_message.$invalid">
+                            <span class="help-block" ng-show="myForm.contact_message.$error.required">Bạn chưa nhập Tin nhắn</span>
+                        </span>
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <input type="hidden" name="save" value="contact">
+                        <button type="submit" class="btn btn-primary" ng-disabled="myForm.contact_name.$dirty && myForm.contact_name.$invalid ||
+                                            myForm.contact_email.$dirty && myForm.contact_email.$invalid ||
+                                            myForm.contact_phone.$dirty && myForm.contact_phone.$invalid ||
+                                            myForm.contact_message.$dirty && myForm.contact_message.$invalid || 
+                                            myForm.contact_name.$error.required || 
+                                            myForm.contact_phone.$error.required ||
+                                            myForm.contact_email.$error.required ||
+                                            myForm.contact_message.$error.required" ng-click="submit()">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-sm-4">
+            <h3>Challenge Team</h3>
+
+            <p>
+                227 Nguyễn Văn Cừ, phường 4, Quận 5<br>
+                Hồ Chí Minh, Vietnam<br>
+            </p>
+
+            <p><i class="fa fa-phone"></i>  +84 8 38.354.394</p>
+
+            <p><i class="fa fa-envelope-o"></i>  ph-daotao@hcmus.edu.vn</p>
+        </div>
+
+    </div>
+
+</div>

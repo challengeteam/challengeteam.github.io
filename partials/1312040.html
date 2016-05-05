@@ -1,0 +1,102 @@
+<div class="container" ng-repeat="x in sinhvien| filter:1312040">
+
+    <div class="row">
+
+        <div class="col-lg-12">
+            <h1 class="page-header">{{x.MSSV}}
+                <small>{{x.HovaTen| uppercase}}</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="index.html">Trang chủ</a>
+                </li>
+                <li class="active">{{x.MSSV}}</li>
+            </ol>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-6">
+            <img class="img-responsive" src="{{x.Image}}" style="width:100%;">
+        </div>
+        <div class="col-md-6">
+            <h2>Giới thiệu sơ lược</h2><br>
+
+            <p>Họ và tên: {{x.HovaTen}}.<p><br>
+            <p>MSSV: {{x.MSSV}}.</p><br>
+            <p>SĐT: {{x.SDT}}<p><br>
+            <p>Email: {{x.Email}}</p><br>
+            <p>Nơi ở: {{x.NoiO}}.</p><br>
+            <p>{{x.NamHoc}}</p>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-lg-12">
+            <h2 class="page-header">Quá Trình Học Tập</h2>
+        </div>
+>
+        <div class="col-sm-4" style="text-align:center;">
+            <img class="img-responsive" src="{{x.Image_DH}}" style="width:100%;height:200px;border-radius:200px">
+
+            <h4>{{x.NamHoc_DH}}</h4>
+            <p>{{x.Truong_DH}}</p>
+            <p>{{x.DiaChi_DH}}</p>
+        </div>	
+    </div>
+
+    <div class="row">
+
+        <div class="col-lg-12">
+            <h2 class="page-header">Sở thích</h2>
+        </div>
+
+        <div class="col-sm-4">
+            <img class="img-responsive" src="{{x.Image_SoThich1}}" style="width:100%;height:200px;">
+
+            <h3 style="text-align:center;">{{x.SoThich1}}</h3>
+        </div>
+         <div class="col-sm-4">
+            <img class="img-responsive" src="{{x.Image_SoThich2}}" style="width:100%;height:200px;">
+
+            <h3 style="text-align:center;">{{x.SoThich2}}</h3>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-lg-12">
+            <h2 class="page-header">Ngôn ngữ thành thạo</h2>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-xs-6">
+            <img class="img-responsive img-customer" src="{{x.NgonNgu1}}">
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-xs-6">
+            <img class="img-responsive img-customer" src="{{x.NgonNgu2}}">
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-xs-6">
+            <img class="img-responsive img-customer" src="{{x.NgonNgu3}}">
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-xs-6">
+            <img class="img-responsive img-customer" src="{{x.NgonNgu4}}">
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-xs-6">
+            <img class="img-responsive img-customer" src="{{x.NgonNgu5}}">
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-xs-6">
+            <img class="img-responsive img-customer" src="{{x.NgonNgu6}}">
+        </div>
+
+    </div>
+
+</div>
+<!-- /.container -->
